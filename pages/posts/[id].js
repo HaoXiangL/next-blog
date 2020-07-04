@@ -5,7 +5,6 @@ import { getPostById, getPostData } from '../../lib/posts'
 
 
 export default function Post({ postData }) {
-  console.log(postData);
   return (
     <Layout>
       <Head>
