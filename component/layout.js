@@ -1,5 +1,4 @@
 import Head from 'next/head';
-import styles from './layout.module.css';
 import Link from 'next/link';
 
 const name = 'Neo Holk';
@@ -23,7 +22,7 @@ const Layout = ({ children, home }) => {
         <meta name="og:title" content={siteTitle} />
         <meta name="twitter:card" content="summary_large_image" />
       </Head>
-      <header className={styles.header}>
+      <header className="flex flex-col items-center">
         {home ? (
           <>
             <div className="flex justify-center">
@@ -47,7 +46,7 @@ const Layout = ({ children, home }) => {
         //         />
         //       </a>
         //     </Link>
-        //     <h2 className={utilStyles.headingLg}>
+        //     <h2>
         //       <Link href="/">
         //         <a className="text-xl">{name}</a>
         //       </Link>
@@ -58,7 +57,7 @@ const Layout = ({ children, home }) => {
       </header>
       <main>{children}</main>
       {!home && (
-        <div className={styles.backToHome}>
+        <div className="mt-12">
           <Link href="/">
             <a>← Back to home</a>
           </Link>
