@@ -26,14 +26,14 @@ const Layout = ({ children, home }) => {
       <header className={styles.header}>
         {home ? (
           <>
-            <div className="">
+            <div className="flex justify-center">
               <img
                 src="/images/profile.jpg"
                 className="w-32 h-32 rounded-full"
                 alt={name}
               />
             </div>
-            <h1 className="text-xl">{name}</h1>
+            <h1 className="flex justify-center text-xl">{name}</h1>
           </>
         ) : null
         // (

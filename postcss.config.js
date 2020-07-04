@@ -1,22 +1,22 @@
-module.exports = {
-  plugins: [
-    'tailwindcss',
-    'postcss-flexbugs-fixes',
-    'autoprefixer',
-    [
-      'postcss-preset-env',
-      {
-        autoprefixer: {
-          flexbox: 'no-2009'
-        },
-        stage: 3,
-        features: {
-          'custom-properties': false
-        }
-      }
-    ]
-  ]
-}
+// module.exports = {
+//   plugins: [
+//     'tailwindcss',
+//     'postcss-flexbugs-fixes',
+//     'autoprefixer',
+//     [
+//       'postcss-preset-env',
+//       {
+//         autoprefixer: {
+//           flexbox: 'no-2009'
+//         },
+//         stage: 3,
+//         features: {
+//           'custom-properties': false
+//         }
+//       }
+//     ]
+//   ]
+// }
 
 // module.exports = {
 //   plugins: {
@@ -35,3 +35,12 @@ module.exports = {
 //       : {})
 //   }
 // };
+
+const tailwind = require('tailwindcss')
+module.exports = {
+  plugins: [
+    require('postcss-easy-import'),
+    tailwind('./tailwind.config.js'),
+    require('autoprefixer')
+  ]
+}
