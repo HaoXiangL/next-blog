@@ -2,11 +2,8 @@ import Head from 'next/head'
 
 import Layout from '../../component/layout'
 import { getPostById, getPostData } from '../../lib/posts'
-import { useRouter } from 'next/router'
 
 export default function Post({ postData }) {
-  const router = useRouter()
-  const { id } = router.query
   return (
     <Layout>
       <Head>
@@ -15,7 +12,6 @@ export default function Post({ postData }) {
       <article className="">
       <h1 className="text-sm sm:text-3xl font-extrabold my-4 leading-tight">{postData.title}</h1>
       {/* {postData.id} */}
-      <p>Route: {id}</p>
       <div className="text-sm text-gray-500">编辑于:{postData.date}</div>
       <br />
       <div dangerouslySetInnerHTML={{ __html: postData.content }}></div>
