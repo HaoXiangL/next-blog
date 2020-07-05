@@ -1,12 +1,12 @@
 import Link from 'next/link';
 
-export default function BlogList({ blogData,current }){
+const BlogList = ({ blogData,current }) => {
   const list = blogData.filter(item => item.kind === current)
   return (
     <>
-      <ul>
+      <ul className="nav__list-style-none">
         {list.map(({ id, date, title }) => (
-          <li className="mt-5 nav__list-style-none" key={id}>
+          <li className="mt-5 p-0" key={id}>
             <Link href="posts/[id]" as={`/posts/${id}`}>
               <a>{title}</a>
             </Link>
@@ -18,3 +18,5 @@ export default function BlogList({ blogData,current }){
     </>
   );
 };
+
+export default BlogList;

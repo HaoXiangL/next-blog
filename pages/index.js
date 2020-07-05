@@ -6,7 +6,7 @@ import BlogList from '../component/blogList';
 import {useState} from 'react'
 
 export default function Home({ allPostsData }) {
-  const pids = ['Tech', 'Project', 'Life', 'About'];
+  const navBar = ['Tech', 'Project', 'Life', 'About'];
   const [currentPath, setCurrentPath] = useState('Tech')
   return (
     <Layout home>
@@ -21,11 +21,11 @@ export default function Home({ allPostsData }) {
       <section>
         {/* NavBar in index */}
         <ul className="flex nav__list-style-none justify-around px-0">
-          {pids.map((pid, index) => (
+          {navBar.map((nav, index) => (
             <li key={index} onClick={() => {
-              setCurrentPath(pid);
-            }} className="cursor-pointer">
-                {pid}
+              setCurrentPath(nav);
+            }} className="cursor-pointer p-4 m-0 text-gray-700">
+                {nav}
             </li>
           ))}
         </ul>

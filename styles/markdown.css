@@ -68,7 +68,7 @@ a {
 }
 a:hover {
   text-decoration: none;
-  color: #ff6600;
+  /* color: #ff6600; */
 }
 a:visited {
   /*color: purple;*/
