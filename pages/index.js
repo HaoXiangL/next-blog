@@ -5,7 +5,6 @@ import BlogList from '../component/blogList';
 import { useState } from 'react';
 import classNames from 'classnames';
 
-
 export default function Home({ allPostsData }) {
   const navBar = ['Tech', 'Project', 'Life', 'About'];
   const [currentPath, setCurrentPath] = useState('Tech');
@@ -16,8 +15,8 @@ export default function Home({ allPostsData }) {
         <title>{siteTitle}</title>
       </Head>
       <section>
-        <p className="flex justify-center my-4 text-lg text-gray-700">
-          Web Developer in ShenZhen. Record Life and Technology in Blog.
+        <p className="flex justify-center my-4 text-xs sm:text-sm lg:text-lg  text-gray-700 ">
+          Record Life and Technology in this Blog.
         </p>
       </section>
       <section>
@@ -30,9 +29,15 @@ export default function Home({ allPostsData }) {
                 setCurrentPath(nav);
                 setCurrentActive(index);
               }}
-              className={classNames("cursor-pointer","p-4","m-0","text-gray-700",{
-                "is-active": currentActive === index
-              })}
+              className={classNames(
+                'cursor-pointer',
+                'p-4',
+                'm-0',
+                'text-gray-700',
+                {
+                  'is-active': currentActive === index,
+                },
+              )}
             >
               {nav}
             </li>

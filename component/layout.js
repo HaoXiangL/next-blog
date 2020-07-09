@@ -8,7 +8,9 @@ const Layout = ({ children, home }) => {
   return (
     <div className="max-w-xl px-4 py-0 mt-12 mx-auto mb-24">
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="keywords" content="liaohaoxiang" />
+        <link rel="icon shortcut" href="/favicon.jpeg" />
         <meta
           name="description"
           content="Blog Record Tech and Life"
