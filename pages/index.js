@@ -1,13 +1,15 @@
 import Head from 'next/head';
-import Link from 'next/link';
 import Layout, { siteTitle } from '../component/layout';
 import { getSortedPostsData } from '../lib/posts';
 import BlogList from '../component/blogList';
-import {useState} from 'react'
+import { useState } from 'react';
+import classNames from 'classnames';
+
 
 export default function Home({ allPostsData }) {
   const navBar = ['Tech', 'Project', 'Life', 'About'];
-  const [currentPath, setCurrentPath] = useState('Tech')
+  const [currentPath, setCurrentPath] = useState('Tech');
+  const [currentActive, setCurrentActive] = useState(0);
   return (
     <Layout home>
       <Head>
@@ -22,10 +24,17 @@ export default function Home({ allPostsData }) {
         {/* NavBar in index */}
         <ul className="flex nav__list-style-none justify-around px-0">
           {navBar.map((nav, index) => (
-            <li key={index} onClick={() => {
-              setCurrentPath(nav);
-            }} className="cursor-pointer p-4 m-0 text-gray-700">
-                {nav}
+            <li
+              key={index}
+              onClick={() => {
+                setCurrentPath(nav);
+                setCurrentActive(index);
+              }}
+              className={classNames("cursor-pointer","p-4","m-0","text-gray-700",{
+                "is-active": currentActive === index
+              })}
+            >
+              {nav}
             </li>
           ))}
         </ul>
