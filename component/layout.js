@@ -10,7 +10,8 @@ const Layout = ({ children, home }) => {
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="keywords" content="liaohaoxiang" />
-        <link rel="icon shortcut" href="/favicon.jpeg" />
+        <link rel="icon shortcut" href="/images/favicon.ico" type="image/x-icon"/>
+        <link rel="icon" href="/images/favicon.ico" type="image/x-icon"></link>
         <meta
           name="description"
           content="Blog Record Tech and Life"
