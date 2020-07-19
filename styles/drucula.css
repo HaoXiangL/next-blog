@@ -68,3 +68,17 @@ http://zenorocha.mit-license.org
 .hljs-emphasis {
   font-style: italic;
 }
+
+/* 自己增加的样式 */
+.hljs-built_in{
+  color: #f1fa8c;
+}
+.hljs-string{
+  color: #50fa7b;
+}
+.hljs-number {
+  color: #bd93f9;
+}
+.hljs-function .hljs-params{
+  color: #FFB65B;
+}
