@@ -82,3 +82,7 @@ http://zenorocha.mit-license.org
 .hljs-function .hljs-params{
   color: #FFB65B;
 }
+
+.hljs{
+  padding: 0.5rem 1rem;
+}

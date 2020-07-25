@@ -6,7 +6,7 @@ export const siteTitle = "Neo's Blog";
 
 const Layout = ({ children, home }) => {
   return (
-    <div className="max-w-xl px-4 py-0 mt-12 mx-auto mb-24">
+    <div className="max-w-xxl px-4 py-0 mt-12 mx-auto mb-24">
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="keywords" content="liaohaoxiang" />
