@@ -20,6 +20,7 @@ function Foo(name){
 
 > 特征：显式原型,用了实现继承。打印: Foo.prototype === instance.```__proto__```   //true
 
+
 3. 实例 var instance = new Foo('neo') 
 
 > 特征：用构造函数生产出来的对象,打印: Foo {name:"neo"}
