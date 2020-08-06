@@ -5,7 +5,7 @@ export const siteTitle = "Neo's Blog";
 
 const Layout = ({ children, home }) => {
   return (
-    <div className="max-w-xxl md:px-0 px-4 py-0 mt-12 mx-auto mb-24">
+    <div className="max-w-xxl px-4 py-0 mt-12 mx-auto mb-24">
       <header className="flex flex-col items-center">
         {home ? (
           <>
