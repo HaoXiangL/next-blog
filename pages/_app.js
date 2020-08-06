@@ -13,12 +13,13 @@ const App = ({ Component, pageProps }) => {
     <>
     <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="keywords" content="liaohaoxiang" />
+        <meta name="keywords" content="liaohaoxiang,Neo's Blog,廖浩翔博客,廖浩翔"/>
         <link rel="icon shortcut" href="/images/favicon.ico" type="image/x-icon"/>
         <meta
           name="description"
-          content="Blog Record Tech and Life"
+          content="Neo's Blog Record Tech and Life"
         />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
         <meta
           property="og:image"
           content={`https://og-image.now.sh/${encodeURI(
