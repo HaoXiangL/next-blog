@@ -1,7 +1,7 @@
 ---
 title: 'Event Loop 详解' 
 date: '2020-07-03'
-kind: 'Tech'
+kind: 'Base'
 ---
 __Advertisement :)__
 

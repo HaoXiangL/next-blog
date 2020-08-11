@@ -1,7 +1,7 @@
 ---
 title: 'async/await中 await怎么解释？'
 date: '2020-07-18'
-kind: 'Tech'
+kind: 'Base'
 ---
 
 > async 不用多说，代表这个函数有异步操作,关键是 await 如何理解

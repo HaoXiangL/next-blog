@@ -1,13 +1,17 @@
 import Head from 'next/head';
-import Layout, { siteTitle } from '../component/layout';
-import { getSortedPostsData } from '../lib/posts';
-import BlogList from '../component/blogList';
 import { useState } from 'react';
 import classNames from 'classnames';
 
+import Layout, { siteTitle } from '../component/layout';
+import BlogList from '../component/blogList';
+import Footer from '../component/footer';
+import { getSortedPostsData } from '../lib/posts';
+
+
+
 export default function Home({ allPostsData }) {
-  const navBar = ['Tech', 'Project', 'Life', 'About'];
-  const [currentPath, setCurrentPath] = useState('Tech');
+  const navBar = ['Base', 'Tech', 'Life', 'About'];
+  const [currentPath, setCurrentPath] = useState('Base');
   const [currentActive, setCurrentActive] = useState(0);
   return (
     <Layout home>
@@ -46,6 +50,9 @@ export default function Home({ allPostsData }) {
         {/* 展示blog内容,来源自lib/post的getSortedPostsData获取本地md文件展示 */}
         <BlogList blogData={allPostsData} current={currentPath} />
       </section>
+      <footer>
+        <Footer />
+      </footer>
     </Layout>
   );
 }
