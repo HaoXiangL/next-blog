@@ -7,7 +7,7 @@ const BlogList = ({ blogData,current }) => {
       <ul className="nav__list-style-none">
         {list.map(({ id, date, title }) => (
           <li className="mt-5 p-0" key={id}>
-            <Link href="/posts/[id]" as={`/posts/${id}`}>
+            <Link href="/Blog/posts/[id]" as={`/Blog/posts/${id}`}>
               <a>{title}</a>
             </Link>
             <br />
