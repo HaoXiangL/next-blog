@@ -1,21 +1,28 @@
+/*
+ * @Author: Neo Holk
+ * @Date: 2020-06-23 17:49:25
+ * @LastEditors: Neo Holk
+ * @LastEditTime: 2021-04-27 14:42:05
+ * @Description:
+ */
 module.exports = {
   purge: [
     // Use *.tsx if using TypeScript
-    // './pages/**/*.js',
-    // './components/**/*.js',
+    "./pages/posts/**.js",
+    "./component/**.js",
   ],
   theme: {
     fontFamily: {
       sans: [
-        'system-ui',
-        '-apple-system',
-        'BlinkMacSystemFont',
+        "system-ui",
+        "-apple-system",
+        "BlinkMacSystemFont",
         '"Segoe UI"',
-        'Roboto',
+        "Roboto",
         '"Helvetica Neue"',
-        'Arial',
+        "Arial",
         '"Noto Sans"',
-        'sans-serif',
+        "sans-serif",
         '"Apple Color Emoji"',
         '"Segoe UI Emoji"',
         '"Segoe UI Symbol"',

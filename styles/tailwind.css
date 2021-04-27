@@ -23,3 +23,9 @@ a,a:hover,li:hover {
   /* background-color: #E6F7FF; */
   color: #096BC8;
 }
+.blog-list-ul {
+  @apply flex justify-around px-0
+}
+.blog-list-li {
+  @apply cursor-pointer p-4 m-0 text-gray-700
+}
